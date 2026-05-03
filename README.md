@@ -154,24 +154,9 @@ The server runs on `http://localhost:5000`
 
 ## 🏆 Credits
 
-**Original Work:**
-- **Dex Explorer v4** by [LorekeeperZinnia](https://github.com/LorekeeperZinnia/Dex)
-- **Modified by:** Moon (original Dex modifications)
-
-**This Version:**
 - **Developer:** mystry112000
 - **Discord:** [discord.gg/Mppf6wXe](https://discord.gg/Mppf6wXe)
-- **Modifications:** 
-  - Renamed to "Mystery Decompiling"
-  - Added custom watermark
-  - Added Terrain & CSG object support
-  - Integrated BetterDecompiler AI
-  - Updated UI with Mystery! branding
 
-**Special Thanks:**
-- King.Kevin (for original contributions)
-- BetterDecompiler team
-- GPT4Free project
 
 ---
 
