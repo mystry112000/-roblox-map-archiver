@@ -8,7 +8,7 @@
 
 > **⚠️ FOR EDUCATIONAL PURPOSES ONLY - Use on games you own or have permission to test on.**
 
-Mystery Decompiling is a powerful Roblox game debugging and decompiling suite, modified from the original Dex Explorer v4 with integrated AI-powered script cleaning via BetterDecompiler.
+Mystery Decompiling is a powerful Roblox game debugging and decompiling suite AI-powered script cleaning via BetterDecompiler.
 
 ## 🔗 Discord Server
 **Join our community:** [discord.gg/Mppf6wXe](https://discord.gg/Mppf6wXe)
