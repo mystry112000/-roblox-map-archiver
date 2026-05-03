@@ -10843,23 +10843,23 @@ Main = (function()
 
 	Main.CreateIntro = function(initStatus) -- TODO: Must theme and show errors
 		local gui = create({
-			{1,"ScreenGui",{Name="Intro",ZIndexBehavior=2,}},
-			{2,"Frame",{Active=true,BackgroundColor3=Color3.new(0.07843137532425,0.07843137532425,0.1176470592618),BorderSizePixel=0,Name="Main",Parent={1},Position=UDim2.new(0.5,-200,0.5,-120),Size=UDim2.new(0,400,0,240),}},
-			{3,"UICorner",{CornerRadius=UDim.new(0,12),Parent={2},}},
-			{4,"Frame",{BackgroundColor3=Color3.new(0.05882352963018,0.05882352963018,0.08627451211214),BorderSizePixel=0,ClipsDescendants=true,Name="Holder",Parent={2},Size=UDim2.new(1,0,1,0),}},
-			{5,"UICorner",{CornerRadius=UDim.new(0,12),Parent={4},}},
-			{6,"UIGradient",{Parent={4},Rotation=45,Transparency=NumberSequence.new(0.3,0.7)}},
-			{7,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=Enum.Font.SourceSansBold,Name="Title",Parent={4},Position=UDim2.new(0.5,-200,0,25),Size=UDim2.new(0,400,0,60),Text="⚡ Mystery Decompiling",TextColor3=Color3.new(1,1,1),TextSize=48,TextTransparency=1,}},
-			{8,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=Enum.Font.SourceSans,Name="Desc",Parent={4},Position=UDim2.new(0.5,-90,0,85),Size=UDim2.new(0,180,0,25),Text="Ultimate Debugging Suite",TextColor3=Color3.new(0.8,0.8,1),TextSize=18,TextTransparency=1,}},
-			{9,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=Enum.Font.SourceSans,Name="StatusText",Parent={4},Position=UDim2.new(0.5,-90,0,130),Size=UDim2.new(0,180,0,25),Text="Fetching API",TextColor3=Color3.new(0.9,0.9,1),TextSize=14,TextTransparency=1,}},
-			{10,"Frame",{BackgroundColor3=Color3.new(0.1176470592618,0.1176470592618,0.15686275064945),BorderSizePixel=0,Name="ProgressBar",Parent={4},Position=UDim2.new(0.5,-100,0,170),Size=UDim2.new(0,0,0,6),}},
-			{11,"UICorner",{CornerRadius=UDim.new(1,0),Parent={10},}},
-			{12,"Frame",{BackgroundColor3=Color3.new(0.2901960784313726,0.2901960784313726,1),BorderSizePixel=0,Name="Bar",Parent={10},Size=UDim2.new(0,0,1,0),}},
-			{13,"UICorner",{CornerRadius=UDim.new(1,0),Parent={12},}},
-			{14,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://2764171053",ImageColor3=Color3.new(1,1,1),Parent={10},ScaleType=1,Size=UDim2.new(1,0,1,0),SliceCenter=Rect.new(2,2,254,254),ImageTransparency=0.3,}},
-			{15,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=Enum.Font.SourceSans,Name="Creator",Parent={4},Position=UDim2.new(0.5,-122,1,-30),Size=UDim2.new(0,245,0,20),Text="MYSTERY!-ASSETS LEAK | discord.gg/Mppf6wXe",TextColor3=Color3.new(0.9,0.9,1),TextSize=13,TextTransparency=1,TextXAlignment=1,}},
-			{16,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=Enum.Font.SourceSans,Name="Version",Parent={2},Position=UDim2.new(1,-110,1,-25),Size=UDim2.new(0,105,0,20),Text=Main.Version,TextColor3=Color3.new(0.6,0.6,0.8),TextSize=12,TextXAlignment=1,}},
-			{17,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,BorderSizePixel=0,Image="rbxassetid://1427967925",Name="Glow",Parent={2},Position=UDim2.new(0.5,-225,0.5,-135),ScaleType=1,Size=UDim2.new(0,450,0,270),SliceCenter=Rect.new(6,6,25,25),TileSize=UDim2.new(0,20,0,20),ImageColor3=Color3.new(0.2901960784313726,0.2901960784313726,1),ImageTransparency=0.8,}},
+			{1,"ScreenGui",{Name="Intro",}},
+			{2,"Frame",{Active=true,BackgroundColor3=Color3.new(0.20392157137394,0.20392157137394,0.20392157137394),BorderSizePixel=0,Name="Main",Parent={1},Position=UDim2.new(0.5,-175,0.5,-100),Size=UDim2.new(0,350,0,200),}},
+			{3,"Frame",{BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BorderSizePixel=0,ClipsDescendants=true,Name="Holder",Parent={2},Size=UDim2.new(1,0,1,0),}},
+			{4,"UIGradient",{Parent={3},Rotation=30,Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1,0),NumberSequenceKeypoint.new(1,1,0),}),}},
+			{5,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=4,Name="Title",Parent={3},Position=UDim2.new(0,-190,0,15),Size=UDim2.new(0,400,0,50),Text="Mystery Decompiling",TextColor3=Color3.new(1,1,1),TextSize=50,TextTransparency=1,}},
+			{6,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Desc",Parent={3},Position=UDim2.new(0,-230,0,60),Size=UDim2.new(0,180,0,25),Text="Ultimate Debugging Suite",TextColor3=Color3.new(1,1,1),TextSize=18,TextTransparency=1,}},
+			{7,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="StatusText",Parent={3},Position=UDim2.new(0,20,0,110),Size=UDim2.new(0,180,0,25),Text="Fetching API",TextColor3=Color3.new(1,1,1),TextSize=14,TextTransparency=1,}},
+			{8,"Frame",{BackgroundColor3=Color3.new(0.20392157137394,0.20392157137394,0.20392157137394),BorderSizePixel=0,Name="ProgressBar",Parent={3},Position=UDim2.new(0,110,0,145),Size=UDim2.new(0,0,0,4),}},
+			{9,"Frame",{BackgroundColor3=Color3.new(0.2392156869173,0.56078433990479,0.86274510622025),BorderSizePixel=0,Name="Bar",Parent={8},Size=UDim2.new(0,0,1,0),}},
+			{10,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://2764171053",ImageColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),Parent={8},ScaleType=1,Size=UDim2.new(1,0,1,0),SliceCenter=Rect.new(2,2,254,254),}},
+			{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-250,1,-20),Size=UDim2.new(0,245,0,20),Text="MYSTERY!-ASSETS LEAK | discord.gg/Mppf6wXe",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
+			{12,"UIGradient",{Parent={11},Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1,0),NumberSequenceKeypoint.new(1,1,0),}),}},
+			{13,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Version",Parent={2},Position=UDim2.new(1,-110,1,-35),Size=UDim2.new(0,105,0,20),Text=Main.Version,TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
+			{14,"UIGradient",{Parent={13},Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1,0),NumberSequenceKeypoint.new(1,1,0),}),}},
+			{15,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,BorderSizePixel=0,Image="rbxassetid://1427967925",Name="Outlines",Parent={2},Position=UDim2.new(0,-5,0,-5),ScaleType=1,Size=UDim2.new(1,10,1,10),SliceCenter=Rect.new(6,6,25,25),TileSize=UDim2.new(0,20,0,20),}},
+			{16,"UIGradient",{Parent={15},Rotation=-30,Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1,0),NumberSequenceKeypoint.new(1,1,0),}),}},
+			{17,"UIGradient",{Parent={2},Rotation=-30,Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1,0),NumberSequenceKeypoint.new(1,1,0),}),}},
 		})
 		Main.ShowGui(gui)
 		local backGradient = gui.Main.UIGradient
@@ -11109,9 +11109,7 @@ Main = (function()
 	Main.CreateMainGui = function()
 		local gui = create({
 			{1,"ScreenGui",{IgnoreGuiInset=true,Name="MainMenu",}},
-			{2,"TextButton",{AnchorPoint=Vector2.new(0.5,0),AutoButtonColor=false,BackgroundColor3=Color3.new(0.1176470592618,0.1176470592618,0.21568627655506),BorderSizePixel=0,Font=Enum.Font.SourceSansBold,Name="OpenButton",Parent={1},Position=UDim2.new(0.5,0,0,2),Size=UDim2.new(0,130,0,38),Text="⚡ Mystery!",TextColor3=Color3.new(1,1,1),TextSize=16,TextTransparency=0.1,}},
-			{3,"UIGradient",{Color=ColorSequence.new(Color3.new(0.2901960784313726,0.2901960784313726,1),Color3.new(0.7843137383461,0.34901961684227,1)),Rotation=90,Parent={2},}},
-			{4,"UICorner",{CornerRadius=UDim.new(0,10),Parent={2},}},
+			{2,"TextButton",{AnchorPoint=Vector2.new(0.5,0),AutoButtonColor=false,BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BorderSizePixel=0,Font=4,Name="OpenButton",Parent={1},Position=UDim2.new(0.5,0,0,2),Size=UDim2.new(0,100,0,32),Text="Mystery!",TextColor3=Color3.new(1,1,1),TextSize=16,TextTransparency=0.20000000298023,}},
 			{3,"UICorner",{CornerRadius=UDim.new(0,4),Parent={2},}},
 			{4,"Frame",{AnchorPoint=Vector2.new(0.5,0),BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),ClipsDescendants=true,Name="MainFrame",Parent={2},Position=UDim2.new(0.5,0,1,-4),Size=UDim2.new(0,224,0,200),}},
 			{5,"UICorner",{CornerRadius=UDim.new(0,4),Parent={4},}},
